@@ -1,0 +1,309 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Project</title>
+</head>
+<body>
+    <!-- startHeader -->
+    <div class="borderBlack" style="height: 80px; width: 100vw; background-color: white;">
+        <div class="container" id="header" style="width: 100%; height: 100%; padding:20px; margin-left:180px; margin-right:50px;">
+            <div class="col-lg-6">
+                <img src="images/socialgoodlogo.png" style="height:50px; width:auto;">
+            </div>
+            <div class="col-lg-6">
+                <a class="a" href="">English</a>
+                <button class="button">Create Account</button>
+                <button class="button">Sign In</button>
+                <img src="images/cart.png" style="height:20px; width:auto;">
+                <a class="a">0 items | $42</a>
+            </div>
+        </div>
+    </div>
+    <!-- endHeader -->
+    <!-- startticketPage -->
+    
+    <div id="ticketPage" class="borderBlack" style="height:600px; width: 100vw; background-color: #f5f5f5;">
+        <div class="container" style="padding:50px; width: 60vw; margin-top:40px;margin-bottom:40px; margin-left:200px; margin-right:50px; background-color: white;">
+            <div class="row" style="margin-bottom:10px;"><h style="font-size: x-large;"><b>Garden Ticket</br></b></h></div>
+            <div class="row">
+                <div class="container borderGrey" style="width: auto; margin-bottom:10px;">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <b>Select date</br></b>
+                            <h>Friday, November 19</br></h>
+                            <a href="">See other dates</a>
+                        </div>
+                        <div class="col-lg-6" style="margin-right: -400px;">
+                            <b>Select time</br></b>
+                            <h>5:30 PM- 5:45 PM</br></h>
+                            <a href="">See other dates</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:10px;">
+                    <div class="col-lg-12">
+                        <b class="a">If you plan to drive to the Botanical Garden,a parking reservation must be made prior to checkout.</br>More information and a parking map can be found on the next page.</b>
+                    </div>
+                </div>
+                <div class="container" style="width:auto;">
+                    <div class="row borderGrey" style="padding:5px; width:auto;">
+                        <div class="col-md-4">
+                            <h>Get Correct Ticket</br></h>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" placeholder="Quantity"></br>
+                        </div>
+                        <div class="col-md-4">
+                            <b>$25.0</br></b>
+                        </div>
+                    </div>
+                    <div class="row borderGrey" style="padding:5px; width:auto;">
+                        <div class="col-md-4">
+                            <h>Get Correct Ticket</br></h>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" placeholder="Quantity"></br>
+                        </div>
+                        <div class="col-md-4">
+                            <b>$15.00</br></b>
+                        </div>
+                    </div>
+                    <div class="row borderGrey" style="padding:5px; width:auto;">
+                        <div class="col-md-4">
+                            <h>Get Correct Ticket</br></h>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" placeholder="Quantity"></br>
+                        </div>
+                        <div class="col-md-4">
+                            <b>$00.00</br></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-4">
+                    <!-- <h>Get Correct Ticket</br></h> -->
+                </div>
+                <div class="col-lg-4">
+                    <!-- <input type="text" placeholder="Quantity"></br> -->
+                </div>
+                <div class="col-lg-4">
+                    <button class="button" style="margin-left:100px; width: 9vw;" onclick="showCart()">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- endticketPage -->
+    <!-- startcartPage -->
+    <div id="cartPage" class="borderBlack" style="height:950px; width: 100vw; background-color:#f5f5f5; display:none;">
+        <div class="container borderGrey" style=" padding:50px; margin-top:50px;margin-bottom:50px; margin-left:200px; margin-right:50px; background-color:white; width: 60vw;">
+            <div class="row">
+                <div class="col-lg-4" style="margin-left: -20px;">
+                    <h style="font-size: x-large;"><b>Tickets</b></h>
+                </div>
+                <div class="col-lg-4">
+                <!-- <input type="text" placeholder="Quantity"></br> -->
+                </div>
+                <div class="col-lg-4">
+                    <button class="button" style="margin-left:110px; width: 10vw;">Empty Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container borderGrey" style="background-color: rgb(242, 242, 242); width: auto; padding: 5px;">
+                    <div class="row" style="margin-left: 5px;">
+                        <h style="font-size: small;">Ticket Name and Info</br></h>
+                        <a href="" style="font-size: 10px;">Review or Edit</br></a>
+                        <h style="font-size: small;">Friday, November 19, 2021 5:30 PM</br></h>
+                        <div class="col-lg-4" style="margin-left: -15px;">
+                            <h style="font-size: small;">1 at $25.00</br></h>
+                        </div>
+                        <div class="col-lg-4">
+                            
+                        </div>
+                        <div class="col-lg-4" style="margin-right: -80px;">
+                            <img src="images/delete.png" style="height:15px; width:auto;">
+                            <h style="font-size: small;">Remove</h>
+                            <h style="font-size: small;">$27.00</h>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h style="font-size: x-large;"><b>Parking</b></h>
+            </div>
+            <div class="container borderGrey" style="background-color: rgb(242, 242, 242); width: 55vw; margin-left: -17px; padding-left: 23px;">
+                <div class="row">
+                    <h style="font-size: small;">Ticket Name and Info</br></h>
+                    <a href="" style="font-size: 10px;">Review or Edit</br></a>
+                    <h style="font-size: small;">Friday, November 19, 2021 5:30 PM</br></h>
+                    <div class="col-lg-4" style="margin-left:-17px;">
+                        <h style="font-size: small;">1 at $25.00</br></h>
+                    </div>
+                    <div class="col-lg-4">
+                    
+                    </div>
+                    <div class="col-lg-4" style="margin-right: -600px;">
+                        <img src="images/delete.png" style="height:15px; width:auto;">
+                        <h style="font-size: small;">Remove</h>
+                        <h style="font-size: small;">$27.00</h>
+                    </div>
+                </div>
+            </div>
+            <div class="container borderGrey" style="background-color: rgb(242, 242, 242); margin-top: 10px; margin-left: -18px; width: 55vw; padding-top: 10px; padding-bottom: 10px;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label for="code">Discount code</label><br>
+                        <input type="text" style="width: 30vw;"></br>
+                    </div>
+                    <div class="col-lg-4">
+                        
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="button" style="margin-left:80px; margin-top:22px; width: 10vw;">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container borderGrey" style="background-color: rgb(242, 242, 242); margin-top: 10px; margin-left: -18px; width: 55vw; padding-top: 10px; padding-bottom: 10px;">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <label name="code">Please add a donation to my ticket purchase</label><br>
+                        <input type="text" style="width: 30vw;"></br>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                    
+                    </div> -->
+                    <div class="col-lg-4">
+                        <button class="button" style="margin-left:80px; margin-top:22px; width: 10vw;">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container borderBroken" style="margin-top: 10px; width: 55vw; margin-left: -18px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="checkbox">
+                        <label for="code">Help cover 3% credit card processing fees with an additional donation</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h style="font-size: x-large;"><b>Personal Information</b></h>
+            </div>
+            <div class="row">
+                <form>
+                    <div class="col-lg-6">
+                        <label name="title">Title</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label name="fname">First Name</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label name="lname">Last Name</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label name="email">Email</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label name="number">Number</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="country">Country</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label for="add">Address</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label for="city">City</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label for="state">State</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                        <label for="zip">ZIP</label><br>
+                        <input type="text" style="width: 25vw;"></br>
+                    </div>
+                </form>
+            </div>
+            <div class="row" style="margin-top:5px;">
+                <div class="col-lg-8">
+                    <!-- <h style="font-size: medium;"><b>Total:$56.00</b></h> -->
+                </div>
+                <!-- <div class="col-lg-4">
+                    <h style="font-size: medium;"><b>Total:$56.00</b></h> -->
+                <!-- </div> --> 
+                <div class="col-lg-4">
+                    <h style="margin-right:-500px;"><b>Total:$56.00</b></h>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <input type="checkbox">
+                        <h style="font-size: 12px;">Register for this site</h></br>
+                        <input type="checkbox">
+                        <h style="font-size: 12px;">Use this as my billing address</h>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+                <div class="col-lg-4">
+                    <button class="button" style="margin-left:80px; margin-top:22px; width: 10vw;" onclick="showCheckout()">Checkout</button>
+                </div>
+            </div>
+            
+        </div>  
+        
+        
+    </div>
+    <!-- endcartPage -->
+    <!-- checkoutPage -->
+    <div id="checkoutPage" class="borderBlack" style="height:600px; width: 100vw; background-color:#f5f5f5; display:none;" onclick="backtoTicket()">
+        <div class="container borderGrey" style=" padding:50px; margin-top:50px;margin-bottom:50px; margin-left:200px; margin-right:50px; background-color:white; width: 60vw; height: auto;">
+            <div class="row">
+                <h style="font-size: 14px;">Dear Kim,</br></br>Thank you for your ticket purchase.</br></br>You will be receiving a confirmation email shortly detailing your transaction.</br></br>Summary of your oder:</br></br></h>
+                <h style="font-size: 14px;">Total: $59.00</br>Date:3/04/22</br></br></h>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-12"> -->
+                    <div class="container borderGrey" style="background-color:#f5f5f5; width: auto;padding: 10px;">
+                        <h style="font-size: 14px;">Name of Ticket</br></br>Friday, November 19, 2021 5:30 PM</br></br>1 at $25.00(Fees:$2.00)</h>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h style="font-size: 14px;"></br>On behalf of our entire organization, thank you again for your support</h>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+                    <h style="font-size: 16px;"><b></br>Total:$56.00</b></h>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- endcheckoutPage -->
+<footer>
+        <div class="container p-5 m-5" id="footer" style="padding:20px;width:60vw; height: auto;">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <img src="images/socialgoodlogo.png" style="height:50px; width:auto;">
+                    </div>
+                    <div class="row">
+                        <p class="">The most complete integration solution for</br>Altru. Unlock Altru to its full potential and book</br>your demo today.</p>
+                    </div>
+                </div>
+        
+                <div class="col-lg-6">
+                    <div class="row">
+                        <p class=""><b>Contact Us:</b></br>9690 South 300 West</br>#303</br></br>801-738-9051</p>
+                    </div>
+                </div>     
+        </div>
+</footer>
+</body>
+<script src="index.js">
+</script>
+</html>

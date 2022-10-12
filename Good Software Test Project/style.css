@@ -1,0 +1,31 @@
+.borderBlack{
+    border: 1px solid white;
+}
+.borderBroken{
+    border: 1px solid black;
+    border-style: dashed;
+}
+.borderGrey{
+    border: 1px solid rgb(230, 230, 230);
+}
+.navBar{
+    /* position: relative; */
+    display: inline-block;
+    text-align: center;
+}
+/* .center{
+    text-align: center;
+} */
+.a{
+    color:gray;
+}
+.h{
+    color:black;
+}
+.b{
+    color:rgb(128, 125, 125);
+}
+.button{
+    background-color: rgb(162, 62, 255);
+    color: white;
+}
